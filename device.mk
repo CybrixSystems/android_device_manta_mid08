@@ -14,14 +14,14 @@
 
 # This file includes all definitions that apply only to mid08 devices
 #
-# Anything that is generic to all allwinner products should go in the common directory
+# Anything that is generic to all manta products should go in the common directory
 #
 # Everything in this directory will become public
 
 $(call inherit-product, device/allwinner/a13/device.mk)
-$(call inherit-product-if-exists, vendor/allwinner/mid08/mid08-vendor.mk)
+$(call inherit-product-if-exists, vendor/manta/mid08/mid08-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/allwinner/mid08/overlay
+DEVICE_PACKAGE_OVERLAYS += device/manta/mid08/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -30,8 +30,8 @@ PRODUCT_COPY_FILES += \
 #
 
 PRODUCT_COPY_FILES += \
-	device/allwinner/mid08/init.sun5i.modules.rc:root/init.sun5i.modules.rc \
-	device/allwinner/mid08/config/camera.cfg:system/etc/camera.cfg \
-	device/allwinner/mid08/config/media_profiles.xml:system/etc/media_profiles.xml \
-	device/allwinner/mid08/config/devicespecific.sh:recovery/root/sbin/devicespecific.sh \
-#
+	device/manta/mid08/config/camera.cfg:system/etc/camera.cfg \
+	device/manta/mid08/config/media_profiles.xml:system/etc/media_profiles.xml \
+	device/manta/mid08/config/devicespecific.sh:recovery/root/sbin/devicespecific.sh \
+# 	device/manta/mid08/init.sun5i.modules.rc:root/init.sun5i.modules.rc \
+
