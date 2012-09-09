@@ -22,3 +22,5 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/manta/mid08/recovery_keys.c
 
 TARGET_KERNEL_CONFIG := mid08_defconfig
 
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
