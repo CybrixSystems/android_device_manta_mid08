@@ -20,7 +20,9 @@ include device/allwinner/a13/BoardConfig.mk
 
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/manta/mid08/recovery_keys.c
 
-TARGET_KERNEL_CONFIG := mid08_defconfig
+TARGET_KERNEL_CONFIG := sun5i_manta_defconfig
+TARGET_KERNEL_SOURCE := $(ANDROID_BUILD_TOP)/kernel/
+TARGET_KERNEL_MODULES_EXT := $(ANDROID_BUILD_TOP)/vendor/allwinner/a13/proprietary/lib/modules
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
