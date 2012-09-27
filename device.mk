@@ -28,6 +28,15 @@ PRODUCT_COPY_FILES += \
         frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
         frameworks/base/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
 #
+PRODUCT_COPY_FILES := \
+	device/manta/mid08/ramdisk/modules/sw-keyboard.ko:/root/lib/modules/sw-keyboard.ko \
+	device/manta/mid08/ramdisk/modules/ft5x_ts.ko:/root/lib/modules/ft5x_ts.ko \
+	device/manta/mid08/ramdisk/init.rc:root/init.rc \
+	device/manta/mid08/ramdisk/initlogo.rle:root/initlogo.rle \
+	device/manta/mid08/ramdisk/init.sun5i.rc:root/init.sun5i.rc \
+	device/manta/mid08/ramdisk/init.sun5i.usb.rc:root/init.sun5i.usb.rc \
+	device/manta/mid08/ramdisk/ueventd.sun5i.rc:root/ueventd.sun5i.rc    
+
 
 PRODUCT_COPY_FILES += \
 	device/manta/mid08/config/camera.cfg:system/etc/camera.cfg \
