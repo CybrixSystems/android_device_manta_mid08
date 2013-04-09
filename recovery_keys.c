@@ -6,7 +6,7 @@
 
 
 int device_toggle_display(volatile char* key_pressed, int key_code) {
-    return 0;
+    return 0I;
 }
 
 int device_handle_key(int key_code, int visible) {
@@ -15,7 +15,7 @@ int device_handle_key(int key_code, int visible) {
 	    case 25:
 	    case 217:
 	    case 72:
-	    case 114:  
+	    case 139:  
             case KEY_DOWN:
                 return HIGHLIGHT_DOWN;
 
